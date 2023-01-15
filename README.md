@@ -1,102 +1,28 @@
-# 03 JavaScript: Password Generator
+# Secure-Zombie: A Password Generator
 
-## Your Task
+## Description
 
-This week's Challenge requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+Having a good password keeps your accounts safe and secure while ensuring a sense of good cybersecurity. With the use of JavaScript, and somehwat basic understanding of probabilities, a password generator app can be created. With a click of button, one can have letters (both Upper and Lower case), numbers, and special characters jumbled into a line of his or hers desire-- within some limits (being between 8-128). I learned while creating this application, that JavaScript can be used in many ways-- and in MANY other ways to create a single job. There are many things in JavaScript that allows users to interact with whichever application one desires to create. I will admit this was not a simple task.
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+## Installation
 
-## User Story
+I was given a pre-filled code which included an html, CSS, and JavaScript files. Both html and CSS were filled so that a text box was already created. My job was figure out in JavaScript, how to make the application provide a strong password for the user should they need it. Through many searches in Google, I was able to start with pseudocoding to put into steps of how I should go about starting. I also researched JavaScript methods, arrays, functions, key values, iterations, conditional statements, for loops, logical comparison operators, and referred back to some lessons learned in Bootcamp. There are a few 'console.log' methods within the JavaScript file so that if anyone would like to confirm in DevTools console, they would be able to. Those methods also helped me to see what kind of interaction correlated within my JavaScript. With SO many tabs running with research, and with the help of a few colleagues, I was able to get my ducks in a row to create a working application that generates an obscure password.
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+## Usage
 
-## Acceptance Criteria
+A user that needs a new, secure password can utilize this application to generate a strong password. With a click of a button, he or she will be able to choose the length of the password. He or she can choose between simple 8 characters, or if they plan on writing it down somewhere or saving it- up to 128 characters. The user will then go through prompts that ask what criteria the user would want the password to consist of, such as :lower/upper case letters, numbers, and/or special characters to beef up security. To ensure the genereator works properly, the user will have to choose at least one yes out of the four prompts shown. When desired user criteria is met, a password is generated into the text box directly on the webpage.
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+Screenshot to show an exmple of randomly generated password:
 
-## Mock-Up
+![alt text](insert source of image)
 
-The following image shows the web application's appearance and functionality:
+Access to deployed webpage:
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
+My GitHub to this repository:
 
-## Grading Requirements
+## Credits!
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+I could not have figured out all of the special characters myself so I used this website to get the special characters used in my JavaScript file: https://www.owasp.org/index.php/Password_special_characters.
+I really could not have worked through this project alone without the help of my colleagues, specifically Blair and BJ, to help debug (SO MUCH DEBUGGING), and assist in issues I could not solve through just research. BJ helped so much with pseudocoding and helping me get to a point where I wasn't overwhelemed. He showed me how important that step was before starting any project. 
+There isn't one specific page that helped me with the whole creating of the application, but some webpages I referred to were: W3 Schools, MDN web docs, and Stack Overflow. And of course many YouTube videos out there explaining JavaScript. 
 
-This Challenge is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
-- - -
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
-# secure-zombie
-# secure-zombie
