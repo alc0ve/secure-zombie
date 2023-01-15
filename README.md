@@ -23,6 +23,8 @@ My GitHub to this repository:
 ## Credits!
 
 I could not have figured out all of the special characters myself so I used this website to get the special characters used in my JavaScript file: https://www.owasp.org/index.php/Password_special_characters.
+
 I really could not have worked through this project alone without the help of my colleagues, specifically Blair and BJ, to help debug (SO MUCH DEBUGGING), and assist in issues I could not solve through just research. BJ helped so much with pseudocoding and helping me get to a point where I wasn't overwhelemed. He showed me how important that step was before starting any project. 
+
 There isn't one specific page that helped me with the whole creating of the application, but some webpages I referred to were: W3 Schools, MDN web docs, and Stack Overflow. And of course many YouTube videos out there explaining JavaScript. 
 
