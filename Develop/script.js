@@ -1,19 +1,20 @@
 // Assignment Code
+//set main variables and values
 let conLowercase;
 let conUppercase;
 let conNumeric;
 let conSpecialchar;
 let enter;
-
+//the actual values in array form
 let lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 let upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 let numeric = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-let specialChar = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "\:", "\;", " < ", "=", " > ", " ? ", "@", "[", "\\", "]", " ^ ", "_", "`", "{", "|", "}", "~"];
+let specialChar = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "\:", "\;", "<", "=", ">", "?", "@", "[", "\\", "]", "^", "_", "`", "{", "|", "}", "~"];
 
+//setting this as long string to test-- ended up using it in 'all character options selected'
 let allOptions = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!#$%&'()*+,-.\"/:;<=>?@[\]^_`{|}~";
-let charCount = allOptions.length;
 
-// setting 'choices' variable below to set a value for later...
+// setting 'choices' variable below to set a value for later in the conditional statements
 let choices;
 
 let generateBtn = document.querySelector("#generate");
@@ -25,18 +26,18 @@ function generatePassword() {
   if (!enter) {
     alert("Needs value! Please try 'Generate Password' again.");
   } else if (enter < 8 || enter > 128) {
-    enter = parseInt(prompt("You must choose number of characters between 8 and 128!"))
+    enter = parseInt(prompt("You must choose a number of characters between 8 and 128!"))
   } else {
-    conLowercase = confirm("Will this contain any lowercase letters?");
-    conUppercase = confirm("Will this contain any uppercase letters?");
-    conNumeric = confirm("Will this contain any numerical values?");
-    conSpecialchar = confirm("Will this contain any special characters?");
+    conLowercase = confirm("Will the password contain any lowercase letters?");
+    conUppercase = confirm("Will the password contain any uppercase letters?");
+    conNumeric = confirm("Will the password contain any numerical values?");
+    conSpecialchar = confirm("Will the password contain any special characters?");
     console.log(conLowercase,conUppercase,conNumeric,conSpecialchar);
   };
 
     //listing conditional statements to what is chosen in prompts
 
-    //if 'cancel' for all four prompts, this throws an alert to choose an option and takes user back to beginning; these are working
+    //if 'cancel' for all four prompts, this throws an alert to choose an option and takes user back to beginning
     if (!conLowercase && !conUppercase && !conNumeric && !conSpecialchar) {
       alert("You must choose a criteria!");
       generatePassword();
@@ -47,6 +48,7 @@ function generatePassword() {
       choices = allOptions;
       // choices = lowerCase.concat(upperCase, numeric, specialChar);
     }
+
     //if 3 OKs are selected through prompts
     else if (conLowercase && conUppercase && conNumeric) {
       choices = lowerCase.concat(upperCase, numeric);
@@ -60,6 +62,7 @@ function generatePassword() {
     else if (conSpecialchar && conNumeric && conUppercase) {
       choices = specialChar.concat(numeric, upperCase);
     }
+
     //if 2 OKs are selected through prompts
     else if (conLowercase && conUppercase) {
       choices = lowerCase.concat(upperCase);
@@ -79,7 +82,8 @@ function generatePassword() {
     else if (conNumeric && conSpecialchar) {
       choices = numeric.concat(specialChar);
     }
-    //if 1 OK is selected through prompts; these are working
+
+    //if 1 OK is selected through prompts
     else if (conLowercase) {
       choices = lowerCase;
     }
@@ -93,15 +97,20 @@ function generatePassword() {
       choices = specialChar;
     }
 
+    //set password to "clear cache" or "clear the text box" so that when it runs again, it won't be added to first generated password
+    password = '';
+
     //for loop to choose password characters- choices.length minus 1 because first is always 0
     for (var i = 0; i < enter; i++) {
-      const space = " ";
-      let chosenChar = choices[Math.floor(Math.random() * Math.floor(choices.length - 1))];
-      space.push(chosenChar);
+      let chosenChar = Math.floor(Math.random() * Math.floor(choices.length - 1));
 
-      console.log(space.join());
-
+      password = password + choices[chosenChar];
     }
+    //checking to see what happens in console to make sure I know what I'm doing    
+      console.log(password);
+      //return so that the hard work in the function that generated the desired password, shows up in the text box
+      return password;
+
   }
 
 // Write password to the #password input
@@ -115,22 +124,3 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-
-
-    //   //if 'cancel' for all four prompts, this throws an alert to choose an option
-    // if (!lowerCase && !upperCase && !numeric && !specialChar) {
-    //   choices = alert("You must choose a criteria!");
-    // };
-
-  // //for loop to choose password characters- charCount minus 1 because the string begins at 0
-  // for (var i = 0; i < enter; i++) {
-  //   let passwordNew = allOptions[Math.floor(Math.random() * Math.floor(charCount - 1))];
-  //   console.log(passwordNew);
-  //   return passwordNew;
-  // }
-
-//pseudocoding with Celeste:
-// target the on click event from generateBtn, when the button is clicked we want something to happen
-// step 2 is create a function for the buttons on clickEvent (if button clicked === true, then run generatePassword)
-// code out our conditional statements using the values stored from the window prompts
