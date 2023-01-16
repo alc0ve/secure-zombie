@@ -2,7 +2,7 @@
 
 ## Description
 
-Having a good password keeps your accounts safe and secure while ensuring a sense of good cybersecurity. With the use of JavaScript, and somehwat basic understanding of probabilities, a password generator app can be created. With a click of button, one can have letters (both upper and lower case), numbers, and special characters jumbled into a line of his or hers desire-- within some limits (being between 8-128). I learned while creating this application, that JavaScript can be used in many ways-- and in MANY other ways to carry out a single job. There are many things in JavaScript that allows users to interact with whichever application one desires to create. I will admit this was not a simple task.
+Having a good password keeps your accounts safe and secure while ensuring a sense of good cybersecurity. With the use of JavaScript, and some basic understanding of probabilities, a password generator app can be created. With a click of button, one can have letters (both upper and lower case), numbers, and special characters jumbled into a line of his or hers desire-- within some limits (being between 8-128). I learned while creating this application, that JavaScript can be used in many ways-- and in MANY other ways to carry out a single job. There are many things in JavaScript that allows users to interact with whichever application one desires to create. I will admit this was not a simple task.
 
 ## Installation
 
