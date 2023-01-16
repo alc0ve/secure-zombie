@@ -2,7 +2,7 @@
 
 ## Description
 
-Having a good password keeps your accounts safe and secure while ensuring a sense of good cybersecurity. With the use of JavaScript, and somehwat basic understanding of probabilities, a password generator app can be created. With a click of button, one can have letters (both Upper and Lower case), numbers, and special characters jumbled into a line of his or hers desire-- within some limits (being between 8-128). I learned while creating this application, that JavaScript can be used in many ways-- and in MANY other ways to create a single job. There are many things in JavaScript that allows users to interact with whichever application one desires to create. I will admit this was not a simple task.
+Having a good password keeps your accounts safe and secure while ensuring a sense of good cybersecurity. With the use of JavaScript, and somehwat basic understanding of probabilities, a password generator app can be created. With a click of button, one can have letters (both upper and lower case), numbers, and special characters jumbled into a line of his or hers desire-- within some limits (being between 8-128). I learned while creating this application, that JavaScript can be used in many ways-- and in MANY other ways to carry out a single job. There are many things in JavaScript that allows users to interact with whichever application one desires to create. I will admit this was not a simple task.
 
 ## Installation
 
@@ -14,17 +14,16 @@ A user that needs a new, secure password can utilize this application to generat
 
 Screenshot to show an exmple of randomly generated password:
 
-![alt text](insert source of image)
+![alt text](./Assets/Screenshot-deployed-pw.png)
 
-Access to deployed webpage:
+Link to the app webpage to create your own password: https://alc0ve.github.io/secure-zombie/
 
-My GitHub to this repository:
+My GitHub to this repository: https://github.com/alc0ve/secure-zombie
 
-## Credits!
+## Credits! 🏆
 
 I could not have figured out all of the special characters myself so I used this website to get the special characters used in my JavaScript file: https://www.owasp.org/index.php/Password_special_characters.
 
-I really could not have worked through this project alone without the help of my colleagues, specifically Blair and BJ, to help debug (SO MUCH DEBUGGING), and assist in issues I could not solve through just research. BJ helped so much with pseudocoding and helping me get to a point where I wasn't overwhelemed. He showed me how important that step was before starting any project. 
+I really could not have worked through this project alone without the help of my colleagues, specifically Blair and BJ, to help debug (SO MUCH DEBUGGING), and assist in issues I could not solve through just research. BJ helped so much with pseudocoding and helping me get to a point where I wasn't overwhelemed. He showed me how important that step was before starting any project. Both of them helped keep me grounded and prevented the hair pulling that would further the thinning of my hair 😅.
 
 There isn't one specific page that helped me with the whole creating of the application, but some webpages I referred to were: W3 Schools, MDN web docs, and Stack Overflow. And of course many YouTube videos out there explaining JavaScript. 
-
